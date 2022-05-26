@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+var totalFamiliares = prompt("Digite o total de familiares:");
+var numero = 1; // quantidade da variavel
+var totaIdades = 0;  // acumula o valor da variavel
+
+while(numero <= totalFamiliares){
+    var idade = parseInt(prompt("Digite a idade dos familiares:"));
+    totaIdades = totaIdades + idade; // acumula o valor das idades e salva na variavel total idade 
+    numero++; // contador conta as vezes que o laço tem que ser repetido atraves de uma condição
+}
+
+var mediaIdades = totaIdades/totalFamiliares;
+mostra("A media das idades é" + mediaIdades)
+</script>

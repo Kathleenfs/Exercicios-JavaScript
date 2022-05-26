@@ -1,0 +1,87 @@
+<canvas width="600"  height="400"></canvas>
+<script>
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d"); // variavel pincel recebe a variavel de que pega um valor 2d 
+     
+                                         //Nesse caso está pedindo para tela um pincel pra desenhar em 2d
+    /*pincel.fillStyle = "lightpink";
+    pincel.fillRect(0, 0, 600, 400); //Preencher uma retangulo e colocal no maximo o tamanho do canvas
+	
+	pincel.fillStyle = "lightgreen";
+    pincel.fillRect(0, 0, 200, 400); // primeira posiçaõ x vertical segunda y horizontal
+
+    pincel.fillStyle = "lightblue";
+    pincel.fillRect(400, 0, 200, 400); */ // a largura da tela é 600 para pintar a segunda faixa somar 200 + 200 = 400 
+
+    pincel.fillStyle = "white";
+    pincel.fillRect(0, 0, 20, 20); 
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(50, 0, 350, 20); 
+ 	
+ 	pincel.fillStyle = "white";
+    pincel.fillRect(0, 0, 20, 20);
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(0, 20, 50, 20);  // Primeiro distancia da margen, segundo largura, terceiro, terceiro cumprimento, quarto altura
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(50, 20, 100, 20);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(100, 20, 50, 20);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(150, 20, 100, 20);
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(200, 20, 50, 20);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(250, 20, 50, 20);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(300, 20, 50, 20);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(350, 20, 50, 20);
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(400, 20, 50, 20); // Termina primeira linha
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(0, 40, 100, 20); //começa segunda linha    // Para pular para proxima linha aumentar o valor da segunda posição
+    pincel.fillStyle = "red";
+    pincel.fillRect(50, 40, 100, 20);
+    pincel.fillStyle = "red";
+    pincel.fillRect(150, 40, 100, 20);
+    
+    pincel.fillStyle = "black";
+    pincel.fillRect(200, 40, 50, 20);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    pincel.fillStyle = "yellow";
+    pincel.beginPath(); // avisa onde o pincel vai iniciar um caminho
+    pincel.moveTo(0, 0); //ESCOLHE EM QUE LUGAR DA TELA VAI DESENHAR PELO EIXO X E Y
+    pincel.lineTo(0, 50); // faz uma linha ate uma posição especifica
+    pincel.lineTo(0, 50);// BASE DO TRIANGULO
+  
+    pincel.fill(); // para preencher
+
+</script>

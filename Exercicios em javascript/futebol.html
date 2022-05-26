@@ -1,0 +1,34 @@
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<br> <br>");
+	}
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var vitorias = parseInt(prompt("Entre com os numeros de vitorias")); // prompt sempre le um texto, mas qunado multiplica ele realiza a multiplicação. Na soma ele realiza uma concatenação
+	var empates = parseInt(prompt("Entre com os numeros de empates"));
+	var pontos = (vitorias * 3 + empates);
+
+	mostra("OSs pontos do seu time são:" + pontos)
+
+
+    if (pontos > 28){
+
+    	mostra("Seu time esta melhor do que ano passsado");
+    }
+
+    if (pontos < 28){
+
+    	mostra("Seu time esta pior do que ano passado");
+    }
+
+    if (pontos == 28){
+
+    	mostra("Seu time está igual ao ano passado");
+    }
+</script>

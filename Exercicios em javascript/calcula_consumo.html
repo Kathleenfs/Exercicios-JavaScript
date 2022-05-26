@@ -1,0 +1,53 @@
+<html>
+	
+	<meta charset="utf-8">
+
+	<h3>Alcool ou gasolina?</h3>
+
+	<script>
+		var tanque = 40
+		var caminhoComGasolina = 480
+		var consumoGasolina = caminhoComGasolina/tanque
+		var caminhoComAcool = 300
+		var consumoAcool = caminhoComAcool/tanque
+
+		document.write("O valor gato no caminho com gasolina foi: " + (consumoGasolina) +"<br>");
+		document.write("O valor gasto no coaminho com consumo de alcool foi: "+ consumoAcool)
+
+        function pulaLinha() {
+
+        	document.write("<br>")
+        }
+
+        function mostra(frase){ // função recebe parametro  frase = ola pessoal
+
+
+        	document.write(frase)
+        	pulaLinha()  // Pode chmar uma função  dentro de outra
+        }
+
+        mostra("Ola Pessoal") // define o que vai ser 
+
+
+	</script>
+
+	<script>
+
+	function pulaLinha() {
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+       document.write(frase);
+       pulaLinha();
+}
+
+var ano = 2019;
+mostra("Eu nasci em : " + (ano - 25));
+mostra("Adriano nasceu em : " + (ano - 26));
+mostra("Paulo nasceu em : " + (ano - 32));
+
+	</script>
+
+
+</html>

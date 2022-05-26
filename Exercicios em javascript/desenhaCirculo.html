@@ -1,0 +1,31 @@
+<canvas width="600"  height="400"></canvas>
+<script>
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d"); // variavel pincel recebe a variavel de que pega um valor 2d 
+     
+                                         //Nesse caso está pedindo para tela um pincel pra desenhar em 2d
+    pincel.fillStyle = "lightpink";
+    pincel.fillRect(0, 0, 600, 400); //Preencher uma retangulo e colocal no maximo o tamanho do canvas
+	
+	pincel.fillStyle = "lightgreen";
+    pincel.fillRect(0, 0, 200, 400); // primeira posiçaõ x vertical segunda y horizontal
+
+    pincel.fillStyle = "lightblue";
+    pincel.fillRect(400, 0, 200, 400); // a largura da tela é 600 para pintar a segunda faixa somar 200 + 200 = 400 
+
+    
+    pincel.fillStyle = "yellow";
+    pincel.beginPath(); // avisa onde o pincel vai iniciar um caminho
+    pincel.moveTo(300, 200); //ESCOLHE EM QUE LUGAR DA TELA VAI DESENHAR PELO EIXO X E Y
+    pincel.lineTo(200, 400); // faz uma linha ate uma posição especifica
+    pincel.lineTo(400, 400);// BASE DO TRIANGULO
+    pincel.fill(); // para preencher
+
+    pincel.fillStyle = "blue";
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0, 2 * 3.14);
+    pincel.fill();
+
+
+</script>

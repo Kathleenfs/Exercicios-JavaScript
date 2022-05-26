@@ -1,0 +1,36 @@
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<br> <br>");
+	}
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10); //roud arredonda random aleatorio
+
+	var tentativas = 1;
+
+	while (tentativas <= 3) {
+
+        var chute = parseInt(prompt("Digite um numero"));
+
+        if(chute == numeroPensado) {
+
+            mostra("Voce acertou" + numeroPensado);
+
+        	break; // quando a condiçaõ é alcançada o laço é forçardo a parar.
+
+        } else {
+
+        	mostra("Voce errou");
+
+        }
+
+        tentativas++;
+	}
+	
+</script>

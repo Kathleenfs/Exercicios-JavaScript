@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+
+  <script>
+  	
+  	function pulaLinha(){
+
+  		document.write("<br> <br>");
+  	}
+
+  	function mostra(frase){
+
+  		document.write(frase);
+  		pulaLinha();
+
+  	}
+
+  	function calculaImc(peso, altura){
+
+  		var imc = peso/(altura*altura);
+  		mostra("O imc de Flavio é" + imc);
+  	}
+    
+    var pesoFlavio = prompt("Informe seu peso");
+    var alturaFlavio = 1.66;
+    calculaImc(pesoFlavio, alturaFlavio);
+
+    function calculaImcReturn(peso, altura){
+    	var imc = peso/(altura*altura);
+    	return imc // vai retornar o imc quando or chamada a função (return 10 quando chamar a função o retorno será 10) No caso retornará o            calculo do imc dentro da variavel imc flavio
+    }
+
+    var imcFlavio = calculaImc(70, 1.67);
+
+
+  </script>
+</body>
+</html>
